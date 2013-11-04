@@ -42,6 +42,9 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
 
                         <ul class="sub about ">
+                        	 <?php wp_nav_menu( array('link_after'  => 'main_nav') ); ?> 
+
+
                             <li><a href="">history</a></li>
                             <li><a href="">our vision & mission</a></li>
                             <li><a href="">team</a></li>
