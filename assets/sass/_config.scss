@@ -1,0 +1,51 @@
+/* _variables.scss */
+
+
+/* GRID SETTINGS                    | **REQUIRED**
+================================================== */
+    $widecreen              : 1140px;
+    $desktop                : 960px;
+    $tablet                 : 768px;
+    $mobile-portrait        : 320px;
+    $mobile-landscape       : 480px;
+
+    $columns                : 12;
+    $margin                 : 10px;
+    $padding                : 10px;
+
+    $responsive             : true;
+    $from-direction         : left;
+
+
+
+/* COLORS                           | **REQUIRED**
+================================================== */
+
+$colorPrimary:          #3a4650;  /*grey blue -dark */
+$colorPrimaryDark:      #2f3941;
+$colorPrimaryLight:     adjust_hue(saturate(darken(#2a2a2a, 13), 21), 0);
+
+$colorSecondary:        #49a7c7; /* main blue - light */
+$colorSecondaryDark:    #363636;
+$colorSecondaryLight:   #7caebf; /* light blue */
+
+$colorTertiary:         #f3f4db; /* light yellow */
+$colorTertiaryDark:     #fb5b37;/* button red */
+$colorTertiaryLight:    #cccccc;
+
+$colorTextDefault:      #433f3e;
+$colorTextLight:        #7e8080;
+$colorAnchorDefault:    #2f7499;
+
+
+
+/* FONTS                            | **REQUIRED**
+================================================== */
+$default:       "opensans", Helvetica, Arial, sans-serif;
+$default-alt:   "opensans-condensed", "Helvetica Neue";
+$serif:         Georgia, serif;
+$pictos:        "pictos";
+$arrrows:       "arrrows";
+$social:        "socialico";
+$socialico:     "socialico";
+$gothic:        "gothic"

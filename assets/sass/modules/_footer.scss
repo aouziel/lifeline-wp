@@ -1,0 +1,103 @@
+/* _footer.scss */
+
+
+footer.default {
+  width:100%;height:auto;
+  min-height:77px;
+  margin-top:3.5em;
+  background-color:$colorPrimaryDark;
+  color:#fafafa;
+
+  ul,h1,h2,h3,h4,p,span,a,li,.widget-title { color:inherit; }
+
+  .footer-inner {
+    width:100%;height:auto;
+    padding:50px 0;
+  }
+
+  /* --------------------------------------------------- */
+  /* MORE STYLES IN _WIDGET.SCSS (.footer-widget)
+  /* --------------------------------------------------- */
+
+  .menu_footer {
+      background-color:$colorPrimaryDark; 
+      font-family: $gothic;
+      border-radius:5px 5px 0 0;
+      width:50%;
+      float:left;
+
+
+
+    > ul {
+      height:30px;
+      width:100%;
+    }
+
+    ul > li {
+      // line-height:#{$height-header_default}px;
+      text-transform: uppercase;
+      letter-spacing:.1px;
+      font-size:18px;
+      float:left;
+      border-right:solid 3px $colorPrimary;
+      margin-top: em(20px);
+      margin-left:em(15px);
+
+
+      &:first-child {margin-left:0px;}
+      &:last-child {border-right:0px;}
+
+
+      > a {
+        display:block;
+        width:100%;
+        /*line-height:250px;*/
+        padding-right:em(15px);
+        color:$colorSecondary;
+
+
+      }
+    }
+
+  }/* menu footer*/
+   .side_menu_footer {
+    float:left;
+    clear:left;
+
+ 
+
+    ul > li {
+      // line-height:#{$height-header_default}px;
+      float:left;
+      
+    }
+      a {
+        /*line-height:88px;*/
+        padding-top: em(30px);
+        padding-right:em(20px);
+        padding-left:em(4px);
+        font-size:11px;
+        color:#f3f4db;
+        font-family:$serif;
+        font-style:italic;
+        letter-spacing:.4px;
+      }
+  } /*side menu */
+   .container {
+
+      button {
+        @include btn;
+          background:$colorSecondary;
+          height:45px;
+          width:145px;
+          border:none;
+          margin: -20px 5px 25px 0;
+          padding:0;
+          float:right;
+
+   } 
+
+    
+    
+  }/* header */
+}

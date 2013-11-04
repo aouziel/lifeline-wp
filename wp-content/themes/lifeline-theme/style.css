@@ -1,0 +1,251 @@
+/*   
+Theme Name: Lifeline Theme
+Description: Custom WordPress Theme template -- WordPress v3.5.2
+Author: Ariel Ouziel
+Author URI: 
+Version: 1
+*/
+
+@media screen {
+
+/* browser reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end browser reset */
+body {
+	background: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.5;
+	}
+h1, h2, h3 {
+	padding-bottom: .1em;
+}
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.75em;}
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+p {
+	padding: 0 0 1em 0;	
+}
+
+img {border:none; outline:none;}
+
+a {text-decoration:none; }
+a:link {}
+a:visited { } 
+a:hover { }
+a:active { }
+
+blockquote { }
+blockquote p { }
+
+ul, ol {  }
+ul ul, ol ol {  }
+
+.post { }
+
+.entry { }
+.entry a { }
+.entry a:hover { }
+
+/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx CSS re-usable classes */
+.clearFloat {clear:both;}
+.floatLeft {float:left;}
+.floatRight {float:right;}
+.alignleft {float:left;}
+.alignright {float:right;}
+.aligncenter {margin:0 auto;}
+
+/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Layout CSS */
+#page-wrap {
+	width: 734px;
+	margin: 20px auto;
+	padding:0 0 0 34px;
+	}
+
+/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx header CSS */
+#widgets-header {
+	width:768px;
+	height:20px;
+	margin:0 0 0 -34px;
+	background:#575757;
+	display:block;
+	}
+header {
+	width:768px;
+	height:80px;
+	margin:0 0 10px -34px;
+	padding:0px;
+	background: url(images/header-bg.png) repeat-x;
+	position:relative;
+	}
+
+/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx navbar CSS */
+nav {
+	width:768px;
+	height:24px;
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	}
+	
+/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx content CSS */
+article {
+	width:300px;
+	min-height:450px;
+	margin:0 0 0 20px;
+	padding:10px;
+	float:left;
+	background:#ccc;
+	}
+	
+/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx sidebar CSS */
+aside {
+	width:300px;
+	min-height:450px;
+	margin:0 0 0 20px;
+	padding:10px;
+	float:left;
+	background:#ccc;
+	}
+	
+/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx footer CSS */
+footer {
+	width:768px;
+	height:25px;
+	margin:0px;
+	padding:0px;
+	background:#575757;
+	clear:both;
+	}
+	
+/* generic CSS available for theme */
+pre { }
+code, tt { }
+
+#meta { }
+.postmetadata { }
+
+.navigation { }
+   .next-posts { }
+   .prev-posts { }
+
+#searchform { }
+	#s { }
+	#searchsubmit { }
+	
+ol.commentlist { list-style: none; }
+ol.commentlist li { }
+ol.commentlist li.alt { }
+ol.commentlist li.bypostauthor { }
+ol.commentlist li.byuser { }
+ol.commentlist li.comment-author-admin { }
+ol.commentlist li.comment { border-bottom: 1px dotted #666; padding: 10px; }
+ol.commentlist li.comment div.comment-author { }
+ol.commentlist li.comment div.vcard { }
+ol.commentlist li.comment div.vcard cite.fn { font-style: normal; }
+ol.commentlist li.comment div.vcard cite.fn a.url { }
+ol.commentlist li.comment div.vcard img.avatar { float:right; margin: 0 0 10px 10px; }
+ol.commentlist li.comment div.vcard img.avatar-32 { }
+ol.commentlist li.comment div.vcard img.photo { }
+ol.commentlist li.comment div.vcard span.says { }
+ol.commentlist li.comment div.commentmetadata { }
+ol.commentlist li.comment div.comment-meta { font-size: 10px; }
+ol.commentlist li.comment div.comment-meta a { color: #ccc; }
+ol.commentlist li.comment p { }
+ol.commentlist li.comment ul { }
+ol.commentlist li.comment div.reply { font-size: 11px; }
+ol.commentlist li.comment div.reply a { font-weight: bold; }
+ol.commentlist li.comment ul.children { list-style: none; margin: 10px 0 0; }
+ol.commentlist li.comment ul.children li { }
+ol.commentlist li.comment ul.children li.alt { }
+ol.commentlist li.comment ul.children li.bypostauthor { }
+ol.commentlist li.comment ul.children li.byuser { }
+ol.commentlist li.comment ul.children li.comment { }
+ol.commentlist li.comment ul.children li.comment-author-admin { }
+ol.commentlist li.comment ul.children li.depth-2 { border-left: 5px solid #555; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-3 { border-left: 5px solid #999; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-4 { border-left: 5px solid #bbb; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-5 { }
+ol.commentlist li.comment ul.children li.odd { }
+ol.commentlist li.even { background: #fff; }
+ol.commentlist li.odd { background: #f6f6f6; }
+ol.commentlist li.parent { border-left: 5px solid #111; }
+ol.commentlist li.thread-alt { }
+ol.commentlist li.thread-even { }
+ol.commentlist li.thread-odd { }
+
+form { }
+input[type=text] { }
+textarea { }
+
+} /* END screen media */
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; } 
+blockquote { margin: 1.3em; padding: 1em; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; } 
+a { text-decoration: none; color: black; }
+	
+} /* END print media */
