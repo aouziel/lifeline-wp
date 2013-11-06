@@ -36,37 +36,20 @@
 			    </form>
 			</div>
 			<nav id="nav">
-				<ul class="select">
-
 
 				<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
-
+				<ul class="select">
                         <ul class="sub about ">
-                        	 <?php wp_nav_menu( array('link_after'  => 'main_nav') ); ?> 
-
-
-                            <li><a href="">history</a></li>
-                            <li><a href="">our vision & mission</a></li>
-                            <li><a href="">team</a></li>
-                            <li><a href="">board</a></li>
-                            <li><a href="">partners</a></li>
+							<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
                         </ul>
-	                
 						<ul class="sub initiatives <?php echo $subnav_class; ?>">
-                            <li><a href="">clean water</a></li>
-                            <li><a href="">fuel efficent technology</a></li>
-                            <li><a href="">micro enterprise</a></li>
+							<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
                         </ul>
-					
 						 <ul class="sub take_action ">
-                            <li><a href="">raise funds</a></li>
-                            <li><a href="">donate</a></li>
-                            <li><a href="">stay informed</a></li>
+						 	<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
                         </ul>
-					
-						<li class="right"> <a href"#"> <img src="../assets/images/header_twit.png" alt=""></a></li>
-						<li class="right"> <a href"#"> <img src="../assets/images/header_fb.png" alt=""></a></li>
-					
+					<li class="right"> <a href"#"> <img src="../assets/images/header_twit.png" alt=""></a></li>
+					<li class="right"> <a href"#"> <img src="../assets/images/header_fb.png" alt=""></a></li>
 				</ul>
 			</nav>
 		</div>
