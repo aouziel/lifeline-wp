@@ -1,0 +1,43 @@
+article{
+
+	.header{
+		background:url(/assets/images/blog_bkg.jpg);
+		background-repeat: no-repeat;
+	}
+	.meta {
+		.comments-link {
+			float:right;
+		}
+	} /*.meta */
+	.post {
+		width:625px;
+		border:none;
+
+		h3 {
+			margin-bottom:11px;
+		}
+
+		a{
+			float:left;
+		}
+	} /* .post */
+	.entry{
+		width:630px;
+		height:180px;
+        @include xbc-gradient(#eee,#fff);
+
+        img {
+       		margin:0 15px;
+        }
+
+        p {
+        	float:left;
+        	text-transform: none;
+        	text-align: left;
+        	font-family: $default;
+        	color:black;
+        	font-size: 13px;
+        }
+
+	}
+} /*article*/

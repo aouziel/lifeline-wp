@@ -2,28 +2,36 @@
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Index
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+
+
 <article>
 	<div class="container">
+		<div class="header">
+		</div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+		<div class="post" id="post-<?php the_ID(); ?>">
+			<h3><?php the_title(); ?></h3>
+			<em>Posted</em> <?php the_date(); ?>
+			<em>in</em> <?php the_category() ?>
 			<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 			<div class="entry">
 				<?php the_content(); ?>
-            <!-- entry--></div>
-			<div class="postmetadata">
-				<?php the_tags('Tags: ', ', ', '<br />'); ?>
-				Posted in <?php the_category(', ') ?> | 
-				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-			<!--postmetadata--></div>
-		    <!-- post--></div>
-	<?php endwhile; ?>
-	<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
-	<?php else : ?>
-		<h2>Not Found</h2>
-	<?php endif; ?>
-</div>
+				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+			<!--entry--></div>
+			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+		<!--post--></div>
+		
+		<?php // comments_template(); ?>
+
+		<?php endwhile; endif; ?>
+		
+
+
+	<?php get_sidebar(); ?>
+
 </article>
-<?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>

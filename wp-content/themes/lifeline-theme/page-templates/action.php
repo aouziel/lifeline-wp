@@ -4,7 +4,7 @@
 */
 get_header(); ?>
 <div class="container" >
-<nav id="nav">
+<ul class="select">
 <ul class="sub">
 <?php
   $children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');
@@ -14,7 +14,7 @@ get_header(); ?>
   </ul>
   <?php } ?>
  </ul>
-</nav>
+</ul>
 </div>
 
 

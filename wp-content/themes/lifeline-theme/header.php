@@ -38,19 +38,18 @@
 			<nav id="nav">
 
 				<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
-				<ul class="select">
+				<li class="right"> <a href"#"> <img src="../assets/images/header_twit.png" alt=""></a></li>
+				<li class="right"> <a href"#"> <img src="../assets/images/header_fb.png" alt=""></a></li>
+			</nav>
+
+			<!--	<ul class="select">
                         <ul class="sub about ">
-							<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
                         </ul>
-						<ul class="sub initiatives <?php echo $subnav_class; ?>">
-							<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
+						<ul class="sub initiatives ">
                         </ul>
 						 <ul class="sub take_action ">
-						 	<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
                         </ul>
-					<li class="right"> <a href"#"> <img src="../assets/images/header_twit.png" alt=""></a></li>
-					<li class="right"> <a href"#"> <img src="../assets/images/header_fb.png" alt=""></a></li>
-				</ul>
-			</nav>
+
+				</ul> -->
 		</div>
 	</header>

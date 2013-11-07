@@ -4,6 +4,7 @@
 */
 get_header(); ?>
 <div class="container" >
+<ul class="select">
 <ul class="sub">
 <?php
   $children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');
@@ -12,18 +13,9 @@ get_header(); ?>
   <?php echo $children; ?>
   </ul>
   <?php } ?>
- </ul>
+</ul>
+</ul>
 </div>
-
-
-
-
-<?php $thisPage="About ILF"; ?>
-
-
-
-
-
 
 
 <!-- 

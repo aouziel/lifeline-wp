@@ -23,6 +23,7 @@ header.default {
 }
    
 .container {margin-bottom:0;
+  color:$colorPrimary;
   }
 
 /* NAV .header_menu (span8 omega)
@@ -97,6 +98,11 @@ header.default {
   margin-top: em(19px);
   z-index:500;
   @include box-shadow(1px 1px 8px 0 rgba(51,51,51,.46));
+   li.right{
+        float:right;
+        clear:none;
+        list-style: none;
+        }
 
   ul {
     //  height:88px;
@@ -133,50 +139,52 @@ header.default {
 
         }
       }/*   li   */
-      #currentpage .sub {
-        display:block;
-      }
-      li.right{
-        float:right;
-        clear:none;
-        }
-  }/* nav */
 
+     
+  }/* nav */
+  .container {
+    padding:0;
     .select {
-      @include transparent-bg($colorSecondary, 0.70, 0,0,0) ; 
-      position:absolute;top:50px;left:0;
+      //position:absolute;top:50px;left:0;
+     // @include transparent-bg($colorSecondary, 0.70, 0,0,0) ; 
+
       // <ul>
       .sub {
        // display:none; 
-        margin:0;padding:0;
-        width:100%;
-        height:30px;line-height:30px;
+        margin:0;
+        padding:0;
+        height:30px;
+        line-height:30px;
         list-style:none;
-        position:absolute;
-        
+        @include transparent-bg($colorSecondary, 0.70, 0,0,0) ; 
+
+        //position:absolute;
+
+
         // shows <ul> .sub
         //&.show { display:block; }
 
-        ul >li {
-          @include inline-block;
-          /* line-height:inherit;
-          display:block;
+        li {
+          line-height:inherit;
           padding:0 16px; 
           font-weight:bold;
-          white-space:nowrap; 
-          font-size:11px; 
           font-family: $default;
-          color: white;
-          line-height:inherit; */
+          font-size:11px;
+          float:left;
+          text-transform: uppercase;
         
 
           a {
+          color:#fff;
+          @include text-shadow(1px 1px 1px rgba(0,0,0,.4));
+
             
 
           } /* a */
-      } /*li*/
+        } /*li*/
       }/* .sub */
     }/* .select */
+  } /*container*/
 
 
 

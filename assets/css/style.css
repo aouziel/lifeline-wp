@@ -1980,6 +1980,7 @@ header.default {
 
 .container {
   margin-bottom: 0;
+  color: #3a4650;
 }
 
 /* NAV .header_menu (span8 omega)
@@ -2067,6 +2068,11 @@ header.default {
   /* ul  */
   /*   li   */
 }
+#nav li.right {
+  float: right;
+  clear: none;
+  list-style: none;
+}
 #nav ul {
   width: 100%;
 }
@@ -2095,53 +2101,43 @@ header.default {
   margin-right: 0.3125em;
   border-bottom: 3px solid #7caebf;
 }
-#nav #currentpage .sub {
-  display: block;
-}
-#nav li.right {
-  float: right;
-  clear: none;
-}
 
 /* nav */
-.select {
+.container {
+  padding: 0;
+  /* .select */
+}
+.container .select {
+  /* .sub */
+}
+.container .select .sub {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  list-style: none;
   background-color: transparent;
   background-color: rgba(73, 167, 199, 0.7);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B349A7C7,endColorstr=#B349A7C7);
   zoom: 1;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  /* .sub */
-}
-.select .sub {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  list-style: none;
-  position: absolute;
   /*li*/
 }
-.select .sub ul > li {
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  /* line-height:inherit;
-  display:block;
-  padding:0 16px; 
-  font-weight:bold;
-  white-space:nowrap; 
-  font-size:11px; 
-  font-family: $default;
-  color: white;
-  line-height:inherit; */
+.container .select .sub li {
+  line-height: inherit;
+  padding: 0 16px;
+  font-weight: bold;
+  font-family: "opensans", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  float: left;
+  text-transform: uppercase;
   /* a */
 }
+.container .select .sub li a {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
 
-/* .select */
+/*container*/
 /* _hero.scss */
 #hero {
   background-image: url(/assets/images/homemain1.jpg);
@@ -2833,3 +2829,84 @@ footer.default .container button * {
 /* .contaner */
 /* ARTICLE
 ================================================== */
+/*blog.scss */
+article {
+  background: url(../assets/images/blog_bg.jpg);
+}
+
+/* _sidebar.scss */
+aside {
+  float: right;
+  width: 319px;
+  /*sidebar_box */
+}
+aside .sidebar_box {
+  width: 270px;
+  height: 115px;
+  background-color: #3a4650;
+  float: right;
+  margin: 0px;
+}
+aside .sidebar_box button {
+  color: #fff;
+  font-family: "Arial";
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #fb5b37;
+  text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+  width: 95px;
+  height: 25px;
+  margin-top: 7px;
+}
+
+/*aside */
+article {
+  /*.meta */
+  /* .post */
+}
+article .header {
+  background: url(/assets/images/blog_bkg.jpg);
+  background-repeat: no-repeat;
+}
+article .meta .comments-link {
+  float: right;
+}
+article .post {
+  width: 625px;
+  border: none;
+}
+article .post h3 {
+  margin-bottom: 11px;
+}
+article .post a {
+  float: left;
+}
+article .entry {
+  width: 630px;
+  height: 180px;
+  background: #eeeeee;
+  background: -moz-linear-gradient(top, #eeeeee 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #eeeeee 0%, white 100%);
+  background: -o-linear-gradient(top, #eeeeee 0%, white 100%);
+  background: -ms-linear-gradient(top, #eeeeee 0%, white 100%);
+  background: linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#eeeeee', endColorstr='white');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='white')";
+}
+article .entry img {
+  margin: 0 15px;
+}
+article .entry p {
+  float: left;
+  text-transform: none;
+  text-align: left;
+  font-family: "opensans", Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 13px;
+}
+
+/*article*/

@@ -1,0 +1,25 @@
+/* _sidebar.scss */
+
+
+
+aside {
+	float:right;
+	width:319px;
+
+	.sidebar_box {
+		width:270px;
+		height:115px;
+		background-color: $colorPrimary;
+		float:right;
+		margin:0px;
+
+		
+
+	button{
+		@include btn_life ();
+		width:95px;
+		height:25px;
+		margin-top:7px;
+	}
+} /*sidebar_box */
+} /*aside */
