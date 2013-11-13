@@ -30,17 +30,17 @@ get_header(); ?>
 			<h1>A Global Impact <br>Snapshot</h1>
 		</div>
 		<div class="span4 black_bg">
-			<img src="/assets/images/home1span4.png" alt="">
+			<img src="<?php bloginfo('template_url'); ?>/assets/images/home1span4.png" alt="">
 			<h1>2,182</h1>
 			<h2>Wells dug and maintained worldwide.</h2>
 		</div>
 		<div class="span4 black_bg">
-			<img src="/assets/images/home2span4.png" alt="">
+			<img src="<?php bloginfo('template_url'); ?>/assets/images/home2span4.png" alt="">
 			<h1>4,382</h1>
 			<h2>Clean stoves delivered to developing countires.</h2>
 		</div>
 		<div class="span4 black_bg">
-			<img src="/assets/images/home3span4.png" alt="">
+			<img src="<?php bloginfo('template_url'); ?>/assets/images/home3span4.png" alt="">
 			<h1>874</h1>
 			<h2>Microfiance loans and small businesses started</h2>
 		</div>

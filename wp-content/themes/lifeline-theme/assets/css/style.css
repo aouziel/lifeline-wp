@@ -2708,7 +2708,7 @@ footer.default .container button * {
 ================================================== */
   /* #main . sidebar */
 }
-.container p {
+.container h6 {
   margin: 0;
   font-family: "gothic";
   font-size: 18px;

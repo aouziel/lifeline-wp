@@ -57,25 +57,25 @@ get_header(); ?>
 		<div id="content_action" class="">
 
 			<div class="span4">
-				<img src="/assets/images/action_1span4.png" alt="">
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/action_1span4.png" alt="">
 				<h3>Clean Water</h3>
 				<h5>Give to a Clean Water Project</h5>
 			</div>
 			<div class="span4">
-				<img src="/assets/images/action2span4.png" alt="">
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/action2span4.png" alt="">
 				<h3>Fuel Efficiant Technology</h3>
 				<h5>Give to a Clean Energy Project</h5>
 			</div>			
 			<div class="span4">
-				<img src="/assets/images/action_3span4.png" alt="">
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/action_3span4.png" alt="">
 				<h3>Micro- <br>Enterprise</h3>
 				<h5>Give to a Small Business Project</h5>
 			</div>				
 		</div><!-- #content-->
 		<div id="sidebar-default" class="sidebar_action">
-		    <p>Go the Extra Mile</P>
+		    <h6>Go the Extra Mile</h6>
 		    <h2 class="span8">Create a Page and fundraise for International Lifeline Fund. Learn More</h2>
-		    <a href="" ><img src="assets/images/sidebar_arrow.png" alt=""></a>
+		    <a href="" ><img src="<?php bloginfo('template_url'); ?>/assets/images/sidebar_arrow.png" alt=""></a>
 	  	</div><!-- #sidebar -->
 
 		<div id="content_action" class="social">
@@ -99,10 +99,10 @@ get_header(); ?>
 					<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 				</h3>
 				<h4>Give to a Small Business Project</h4>
-		    	<a class="media"href="" ><img class="fb" src="assets/images/action_fb.png" alt=""></a>
-		    	<a  href="" ><img src="assets/images/action_twitter.png" alt=""></a>
-		   		<a  href="" ><img src="assets/images/action_vimo.png" alt=""></a>
-		    	<a  href="" ><img src="assets/images/action_flickr.png" alt=""></a>
+		    	<a class="media"href="" ><img class="fb" src="<?php bloginfo('template_url'); ?>/assets/images/action_fb.png" alt=""></a>
+		    	<a  href="" ><img src="<?php bloginfo('template_url'); ?>/assets/images/action_twitter.png" alt=""></a>
+		   		<a  href="" ><img src="<?php bloginfo('template_url'); ?>/assets/images/action_vimo.png" alt=""></a>
+		    	<a  href="" ><img src="<?php bloginfo('template_url'); ?>/assets/images/action_flickr.png" alt=""></a>
 			</div>				
 		</div><!-- #content-->	
 	</div> <!-- .container -->
