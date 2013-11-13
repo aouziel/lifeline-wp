@@ -7,16 +7,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	index scss is in _single 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 
 
 
@@ -30,35 +22,22 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 				<h1>Sublime to the Title</h1>
 		</div>
 		</div>
+		<div class="span8">
 
-		<div class="blog">
-			<div class="span8">
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<div class="post" id="post-<?php the_ID(); ?>">
-					<h3><?php the_title(); ?></h3>
-					<!--<em>Posted</em> <?php the_date(); ?>
-					<em>in</em> <?php the_category() ?> -->
-					<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
-					<div class="entry">
-						
-						<hr class="box">
-						<?php the_post_thumbnail ('catagory-thumb'); ?>
-						<?php the_excerpt(); ?>
-						<a class="read_more" href="<?php echo get_permalink(); ?>"> Read More</a>
-						
-
-						<div class="social_media">
-							<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
-							<a href="https://twitter.com/share" class="twitter-share-button" data-via=" " data-count="none">Tweet</a>
-						</div><!-- social_media-->
-
-						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-					</div><!--entry-->
-				<? // php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-				</div><!--post-->
-			
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+						<h3><?php the_title(); ?></h3>
+						<?php //include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+						<div class="entry">
+							<?php the_content(); ?>
+							<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+							<?php the_tags( 'Tags: ', ', ', ''); ?>
+						<!--entry--></div>
+						<?php edit_post_link('Edit this entry','','.'); ?>
+					<!--post--></div>
+				<?php comments_template(); ?>
 				<?php endwhile; endif; ?>
-			</div>
+		</div>
 
 
 

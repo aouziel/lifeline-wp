@@ -2394,7 +2394,7 @@ footer.default .container button * {
 /*  about_hero
 =====================================*/
 #about_hero {
-  background-image: url(/assets/images/about_bg.jpg);
+  background-image: url(../images/about_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -2415,6 +2415,7 @@ footer.default .container button * {
   padding-top: 1.875em;
   padding-left: 50px;
   text-align: left;
+  margin: 0;
 }
 #about_hero .about_inner h1 {
   margin: 0 0 0 50px;
@@ -2422,9 +2423,9 @@ footer.default .container button * {
 #about_hero .about_inner > h5 {
   font-size: 21px;
   font-family: Georgia, serif;
-  margin-left: 50px;
   font-style: italic;
   font-weight: normal;
+  margin: 0 0 10px 50px;
 }
 #about_hero .about_inner h4 {
   color: #fb5b37;
@@ -2536,7 +2537,7 @@ footer.default .container button * {
 /*  initiatives_hero
 =====================================*/
 #initiatives_hero {
-  background-image: url(/assets/images/initiative_bg.jpg);
+  background-image: url(../images/initiative_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -2674,7 +2675,7 @@ footer.default .container button * {
 /* HERO 
 ================================================== */
 #action_hero {
-  background-image: url(/assets/images/action_bg.jpg);
+  background-image: url(../images/action_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -2734,14 +2735,9 @@ footer.default .container button * {
   letter-spacing: 1px;
   padding: 0;
   margin: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .container #content_action h4 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 .container #content_action h5 {
   text-align: center;
@@ -2895,6 +2891,40 @@ aside .sidebar_box button {
 article {
   /* container */
 }
+article .container {
+  /* .post */
+}
+article .container .post {
+  border: none;
+  /* .entry */
+}
+article .container .post .meta {
+  font-size: 11pt;
+}
+article .container .post h3 {
+  margin-bottom: 11px;
+  font-size: 31pt;
+}
+article .container .post a {
+  float: left;
+}
+article .container .post .entry {
+  height: auto;
+}
+article .container .post .entry img {
+  float: left;
+}
+article .container .post .entry p {
+  text-transform: none;
+  text-align: left;
+  font-family: "opensans", Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 15px;
+  padding-bottom: 0.9375em;
+}
+article .container .post .entry p a {
+  margin: 0 12px 5px 0;
+}
 
 /*article*/
 article {
@@ -2905,7 +2935,7 @@ article .container {
   /* blog */
 }
 article .container #bg_image {
-  background-image: url(/assets/images/blog_bkg.jpg);
+  background-image: url(../images/blog_bkg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -2924,6 +2954,7 @@ article .container #bg_image .blog_inner p {
   padding-top: 1.875em;
   padding-left: 50px;
   text-align: left;
+  margin: 0;
 }
 article .container #bg_image .blog_inner h1 {
   margin: 0 0 0 50px;
@@ -2949,10 +2980,11 @@ article .container .blog .post a {
   float: left;
 }
 article .container .blog .post .meta {
-  /*li {
-  	float:left;
-  	clear:left;
-  }*/
+  font-size: 11pt;
+  font-family: Georgia;
+}
+article .container .blog .post .meta ul {
+  clear: both;
 }
 article .container .blog .post .meta img {
   float: right;
@@ -2979,12 +3011,16 @@ article .container .blog .post .entry p a {
   display: none;
 }
 article .container .blog .post .entry .box {
-  display: block;
-  border: none;
-  color: white;
-  height: 1px;
-  background: black;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#cccccc), to(white));
+  /*display:block;
+  border:none;
+  color:white;
+  height:12px;
+  background:black;
+  background: -webkit-gradient(radial, 50% 50%, , 50% 50%, 350, from(#ccc), to(#fff));*/
+  height: 15px;
+  margin-bottom: 0;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.2);
 }
 article .container .blog .post .entry .read_more {
   width: 90px;
@@ -3000,3 +3036,20 @@ article .container .blog .post .entry .social_media {
 }
 
 /*article*/
+#respond h3 {
+  font-size: 30px;
+  margin: 0;
+}
+#respond p {
+  font-size: 13px;
+  margin: 0 0 10px 0;
+}
+#respond .comment_box {
+  width: 100%;
+}
+#respond .submit {
+  background-color: #fb5b37;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}

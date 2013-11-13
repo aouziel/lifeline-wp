@@ -4,7 +4,7 @@ article{
 	
 
 		#bg_image{
-		  background-image:url(/assets/images/blog_bkg.jpg);
+		  background-image:url(../images/blog_bkg.jpg);
 		  background-repeat: no-repeat;
 		  background-position: center;
 		  margin-left:auto;
@@ -24,6 +24,7 @@ article{
 			        padding-top:em(30px);
 			        padding-left:50px;
 			        text-align:left;
+			        margin:0;
 			    } 
 			    h1 {
 			        margin:0 0 0 50px;
@@ -53,10 +54,18 @@ article{
 				}
 
 				.meta {
-					/*li {
-						float:left;
-						clear:left;
-					}*/
+					
+						//float:left;
+						font-size:11pt;
+						font-family:Georgia;
+
+					
+					ul {
+						
+							//float:left;
+							clear:both;
+						
+					}
 
 					img{
 						float:right;
@@ -87,13 +96,17 @@ article{
 		        	}
 		      			
 					.box{ 
-					    display:block;
-					    border:none;
-					    color:white;
-					    height:1px;
-					    background:black;
-					    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#ccc), to(#fff));
-					}
+				    /*display:block;
+				    border:none;
+				    color:white;
+				    height:12px;
+				    background:black;
+				    background: -webkit-gradient(radial, 50% 50%, , 50% 50%, 350, from(#ccc), to(#fff));*/
+				    height: 15px;
+				    margin-bottom:0;
+    				border: 0;
+    				box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.2);
+				}
 				
 					.read_more{
 						width:90px;

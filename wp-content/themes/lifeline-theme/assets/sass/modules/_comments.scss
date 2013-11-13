@@ -1,0 +1,21 @@
+
+#respond {
+	h3 {
+		font-size:30px;
+		margin:0;
+	}
+	p {
+		font-size:13px;
+		margin:0 0 10px 0;
+	}
+	.comment_box {
+		width:100%;
+	}
+	.submit {
+		background-color: $colorTertiaryDark;
+		color:white;
+		border-radius: 5px;
+		margin-top: 20px;
+	}
+
+}
