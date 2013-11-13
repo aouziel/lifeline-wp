@@ -1,0 +1,39 @@
+/* style.scss */
+ 
+/* SASS Libraries */
+@import "compass",
+        "mixins";
+
+/* Reset */
+@import "vendor/normalize";
+
+
+/* Base & Vars */
+@import "config",
+        "core/grid",
+        "core/fonts",
+        "core/typography",
+        "core/body";
+
+
+/* Libraries */
+@import "lib/functions",
+        "lib/forms",
+        "lib/buttons";
+ 
+ 
+
+
+/* Modules & Components */ 
+@import "modules/header",
+	"modules/hero",
+	"modules/content-shared",
+	"modules/footer",
+	"modules/about",
+        "modules/initiatives",
+        "modules/action",
+        "modules/blog",
+        "modules/sidebar",
+        "modules/single",
+        "modules/page";
+

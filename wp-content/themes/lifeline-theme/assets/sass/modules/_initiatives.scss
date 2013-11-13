@@ -1,0 +1,160 @@
+/* _initiatives.scss */
+
+
+
+/*  initiatives_hero
+=====================================*/
+#initiatives_hero{
+  background-image:url(/assets/images/initiative_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left:auto;
+  margin-right: auto;
+  height:650px;
+  display: block;
+  width:$desktop;
+
+  .container {
+    margin:0;
+    padding:0;
+  }
+
+  /*&.default {height:500px;}*/
+  
+  .initiatives_inner{
+    /*display:table;*/
+    text-align:left;
+    margin:0;
+    padding:0; 
+
+      h1 {
+        margin:0 0 35px 50px;
+        font-size: 80px;
+        color:#fff;
+        line-height: 1em;
+      }
+  
+
+      h3 {
+        color:$colorSecondaryLight;
+        margin: 0 0 0 50px;
+        padding-top:85px;
+        text-transform: uppercase;
+      }
+  } /*initiatives_hero */
+
+  .black_bg{
+        @include xbc-transparent-bg(.6, #000,60,70,70);
+        @include border-radius(8px); 
+        width:310px;
+        height:330px;
+        margin-left:em(7px);
+
+  &:first-child {margin:0;}
+
+    img {
+      @include center();
+      padding-top:em(25px);
+    }
+
+
+
+   h1 {
+     color:#fff;
+     text-align: center;
+     margin:0;
+     font-size: em(90px);
+   }
+  
+   h2 {
+     color:#fff;
+     text-align: center;
+     padding: 0 50px;
+     margin:0;
+   }
+  } /*.black bg */
+} /*  initiatives hero  */
+
+
+/* #MAIN
+================================================== */
+#main_about{
+
+  &.default {margin-top:em(55px);min-height:600px;}
+  &.blog    {}
+  &.page    {margin-top:em(55px);}
+  &.single  {margin-top:em(55px);}
+}
+
+
+/*container
+===================================================*/
+
+.container{
+
+}  
+
+
+
+  /* .content
+  ================================================== */
+  #content{
+    margin-top:0;
+ 
+  }
+
+  #main_init {
+    .grey_bg {
+      width:305px;
+      margin: 0 5px 0 3px;
+      padding-top:15px;
+      @include xbc-gradient(#f2f2f2,#fff);
+
+
+
+      h4 {
+        text-align: left;
+        padding: 0 20px;
+        font-family: $default;
+      }
+
+      button {
+        @include btn_life ();
+       height:25px;
+       margin-left:20px;
+       margin-bottom: em(25px);
+      }
+    }
+
+
+    .container {
+  
+   
+    }  /* container */
+} /* main about */
+
+    /* ARTICLE
+    ================================================== */
+    article {
+
+    }
+
+
+
+
+  /* SIDEBAR
+  ================================================== */
+  #main .sidebar{
+    
+    }
+   
+
+    .sidebar-inner {
+      
+    }
+
+  
+
+  .sidebar_partners {
+   
+  }

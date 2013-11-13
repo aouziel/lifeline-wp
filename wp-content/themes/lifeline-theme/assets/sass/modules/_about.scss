@@ -1,0 +1,172 @@
+/* _about.scss */
+
+
+
+/*  about_hero
+=====================================*/
+#about_hero{
+  background-image:url(/assets/images/about_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left:auto;
+  margin-right: auto;
+  height:670px;
+  z-index:0;
+
+  /*&.default {height:500px;}*/
+  
+  .about_inner{
+    /*display:table;*/
+    text-align:left;
+    
+
+     p {
+        font-size: em(36px);
+        font-family: $gothic;
+        color:$colorSecondary;
+        padding-top:em(30px);
+        padding-left:50px;
+        text-align:left;
+
+      } 
+      h1 {
+        margin:0 0 0 50px;
+      }
+    
+
+      > h5 {
+        font-size: 21px;
+        font-family: $serif;
+        margin-left:50px;
+        font-style:italic;
+        font-weight: normal;
+
+      }
+
+      h4 {
+        color:$colorTertiaryDark;
+        margin:0 0 0 50px;
+      }
+  } /* about_innter*/
+} /*about_hero */
+
+
+/* #MAIN
+================================================== */
+#main_about{
+
+  &.default {margin-top:em(55px);min-height:600px;}
+  &.blog    {}
+  &.page    {margin-top:em(55px);}
+  &.single  {margin-top:em(55px);}
+}
+
+
+/*container
+===================================================*/
+
+.container{
+
+}  
+
+
+
+  /* .content
+  ================================================== */
+  #content{
+ 
+  }
+
+  #main_about {
+    /*display:table-cell;*/
+    vertical-align:middle;
+    background-color: #fff;
+    color:black;
+    padding:0;
+    height:360px;
+    z-index:999;
+    margin:-280px 0 0 80px;
+    @include xbc-transparent-bg(.4, #fff,60,70,70);
+
+
+
+
+
+
+    .container {
+
+     p{
+       font-size: em(15px);
+       font-family: $default;
+       float:left;
+       text-align: left;
+       text-transform: none;
+       margin:10px 60px 10px 0;
+     }
+
+       &:first-child p {margin-top:em(30px)}
+
+      button {
+       @include btn_life ();
+       height:25px;
+       margin-bottom: em(25px);
+      }
+      .triangle_btn{
+        padding-top: 60px;
+
+
+        >.triangle {
+          width:220px;
+          height:120px;
+          background-color: $colorPrimaryDark;
+
+  
+            h3 {
+              color:white;
+              margin: 20px 0 5px 30px;
+              font-size: 42px;
+            }
+            button {
+              @include btn_life ();
+              height:25px;
+              width:100px;
+              margin: 0 0 30px 30px;
+              padding:0;
+            }
+        }
+        >.arrow-right {
+          width: 0; 
+          height: 0; 
+          border-top: 60px solid transparent;
+          border-bottom: 60px solid transparent;
+          border-left: 60px solid $colorPrimaryDark;
+        }
+      } /* tirabgle btn */
+    }  /* container */
+} /* main about */
+
+    /* ARTICLE
+    ================================================== */
+    article {
+
+    }
+
+
+
+
+  /* SIDEBAR
+  ================================================== */
+  #main .sidebar{
+    
+    }
+   
+
+    .sidebar-inner {
+      
+    }
+
+  
+
+  .sidebar_partners {
+   
+  }

@@ -1,4 +1,6 @@
 <?php
+
+    add_theme_support ( 'post-thumbnails');
 	
 	// Add RSS links to <head> section
 	automatic_feed_links();

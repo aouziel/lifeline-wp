@@ -1,0 +1,204 @@
+/* _header.scss */
+
+
+/* HEADER.default
+================================================== */
+$height-header_default:   88;
+header.default {
+  width:100%;
+  height:137px;
+  height:$height-header_default;
+  background-color:$colorPrimary;
+
+}
+
+/* LOGO (span4)
+ ================================================== */
+.logo {
+  float:left;
+  margin-top:12px;
+  position: absolute;
+  z-index:999;
+  
+}
+   
+.container {margin-bottom:0;
+  color:$colorPrimary;
+  }
+
+/* NAV .header_menu (span8 omega)
+================================================== */
+.side_menu {
+   
+    
+  ul {
+    float:right;
+    
+    ul>li {
+       // line-height:#{$height-header_default}px;
+      float:left;
+
+      &:last-child a {padding-right:75px;}
+
+      a {
+        display:block;
+        width:100%;
+        height:100%;
+        /*line-height:88px;*/
+        padding-top: em(30px);
+        padding-right:em(20px);
+        padding-left:em(4px);
+        font-size:11px;
+        color:#f3f4db;
+        font-family:$serif;
+        font-style:italic;
+        letter-spacing:.4px;
+      }
+    } /* ul / li*/
+  } /* ul */
+  >form {
+    float:right;
+    clear:right;
+    padding-right:em(76px);
+    padding-top:em(10px);
+    >input {
+      width:185px;
+      height:26px;
+      background-color: $colorPrimaryDark;
+      border:none;
+      box-shadow:none;
+      border-radius:0;
+      opacity:0.4;
+      filter:alpha(opacity=40);
+      >textarea {
+        height:12px;
+        font-family: $serif;
+      }
+    } /*input*/
+      >button {
+        width:33px;
+        height:26px;
+        background-color:$colorPrimaryDark;
+        border:none;
+        margin-left:-5px;
+      }
+  }/*form*/
+}/* side menu */
+
+// <nav<
+#nav {
+  position: relative;
+  @include xbc-gradient(#49a7c7,#39879e); 
+  padding:0 10px;
+  font-family: $gothic;
+  border-radius:5px 5px 0 0;
+  width:100%;
+  height:50px;
+  float:left;
+  margin-top: em(19px);
+  z-index:500;
+  @include box-shadow(1px 1px 8px 0 rgba(51,51,51,.46));
+   li.right{
+        float:right;
+        clear:none;
+        list-style: none;
+        a {
+          padding-top:em(17px);
+        }
+        }
+
+  ul {
+    //  height:88px;
+      width:100%;
+    } /* ul  */
+
+    // <ul>
+       li {
+        // line-height:#{$height-header_default}px;
+        text-transform: uppercase;
+        letter-spacing:.1px;
+        font-size:18px;
+        float:left;
+        @include text-shadow(1px 1px 1px rgba(0,0,0,.4));
+        padding-bottom: em(5px);
+        margin-right: em(5px);
+
+        &:first-child a {padding-left:em(10px)}
+
+        a {
+          display:block;
+          width:100%;
+          height:100%;
+          /*line-height:250px;*/
+          padding-top: em(21px);
+          padding-right:em(30px);
+          padding-left:em(4px);
+          color:#fff;
+          padding-bottom: em(5px);
+          margin-right: em(5px);
+          border-bottom: 3px solid $colorSecondaryLight;
+
+         
+
+        }
+      }/*   li   */
+
+     
+  }/* nav */
+  .container {
+    padding:0;
+    .select {
+      //position:absolute;top:50px;left:0;
+     // @include transparent-bg($colorSecondary, 0.70, 0,0,0) ; 
+
+      // <ul>
+      .sub {
+       // display:none; 
+        margin:0;
+        padding:0;
+        height:30px;
+        line-height:30px;
+        list-style:none;
+        @include transparent-bg($colorSecondary, 0.70, 0,0,0) ; 
+
+        //position:absolute;
+
+
+        // shows <ul> .sub
+        //&.show { display:block; }
+
+        li {
+          line-height:inherit;
+          padding:0 16px; 
+          font-weight:bold;
+          font-family: $default;
+          font-size:11px;
+          float:left;
+          text-transform: uppercase;
+        
+
+          a {
+          color:#fff;
+          @include text-shadow(1px 1px 1px rgba(0,0,0,.4));
+
+            
+
+          } /* a */
+        } /*li*/
+      }/* .sub */
+    }/* .select */
+  } /*container*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
