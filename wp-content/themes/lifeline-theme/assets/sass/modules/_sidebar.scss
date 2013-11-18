@@ -17,17 +17,18 @@ aside {
 				line-height:1.5em;
 
 			}
-		}
+		}/*li*/
 		.textwidget {
-			p {
+			a {
 				text-transform: none;
 				font-size:12px;
 				font-family: Georgia;
 				color:#35373e;
 				text-align: left;
 				line-height:1.5em;
-		}
-	}
+			}
+
+		} /*.textwidget*/
 		h2 {
 			font-family:$gothic;
 			font-size:26px;
@@ -45,7 +46,8 @@ aside {
 		margin:0 0 40px 20px;
 		h3 {
 			color:white;
-			margin:20px 0 5px 15px;
+			margin:15px 0 5px 15px;
+			font-size: 42px;
 		}		
 		button{
 			@include btn_life ();

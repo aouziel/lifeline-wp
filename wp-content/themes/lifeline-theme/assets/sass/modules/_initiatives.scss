@@ -8,6 +8,7 @@
   background-image:url(../images/initiative_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  margin-top:-30px;
   margin-left:auto;
   margin-right: auto;
   height:650px;
@@ -106,7 +107,7 @@
   #main_init {
     .grey_bg {
       width:305px;
-      margin: 0 5px 0 3px;
+      margin: 0 7px 0 8px;
       padding-top:15px;
       @include xbc-gradient(#f2f2f2,#fff);
 

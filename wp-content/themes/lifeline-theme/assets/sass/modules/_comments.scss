@@ -1,3 +1,5 @@
+/* _comments.scss */
+
 
 #respond {
 	h3 {
@@ -17,5 +19,57 @@
 		border-radius: 5px;
 		margin-top: 20px;
 	}
+	form{
+		input{
+			margin: 0 0 10px 0;
+		}
+	}
+} /*respond */
+.commentlist {
+	
+    //height: 15px;
+    //margin-bottom:0;
+	//border: 0;
+	//box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.2);
+	.comment{
+		.comment-author {
+			//background-color:$colorSecondaryLight;
+			 height: 65px;
+    		padding-bottom:0px;
+			border: 0;
+			box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.2);
+		}
+		.reply{
+			margin-bottom:10px;
+		}
+		.comment-reply-link {
+			background-color: $colorSecondary;
+			color:white;
+			border-radius: 3px;
+			padding: 5px 10px;
+			font-weight: bold;
+		}
+	}
+	.comment-awaiting-moderation{
+		font-size:11px;
 
+	}
+				
+	.fn{
+		font-family:$gothic;
+	}
+	.says {
+		font-family:$gothic;
+	}
+	img {
+		padding-bottom:em(10px);
+		padding-top:em(10px);
+	}
+	a {
+		font-size:em(13px);
+	}
+	p {
+		font-family: $default;
+		font-size: em(15px);
+	}
 }

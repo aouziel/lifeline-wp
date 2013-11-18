@@ -18,7 +18,9 @@
 		<div class="container full">
 		
 			<div class="logo">
-				<a href="index.php"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png"></a>
+				<a href="<?php echo home_url (); ?>">  
+       			 
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png"></a>
 
 			</div>
 			<div class="side_menu">

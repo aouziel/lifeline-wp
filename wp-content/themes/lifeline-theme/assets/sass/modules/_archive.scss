@@ -1,0 +1,44 @@
+/* archive.scss */
+
+article {
+	.container {
+		.span8 {
+			//padding-right:30px;
+			.meta {
+				clear:left;
+				margin-bottom: em(10px);
+			
+				.post-categories {
+					li {
+						float:left;
+						clear:both;
+					}
+					.comments-link {
+						a {
+						float:right;
+						}
+					} /* .comments-link*/					
+				} /*.post-categories */
+				img {
+					float:right;
+				}
+				.comments-link {
+					float:right;
+				}
+			} /* .meta*/
+
+			.entry {
+				.box {
+					height: 15px;
+				    margin-bottom:0;
+    				border: 0;
+    				box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.2);
+				}
+			}
+		} /*.span8*/
+	}/* .container */
+} /*article */
+
+aside {
+	margin-top:em(100px);
+}

@@ -1,3 +1,6 @@
+/*      single.scss     */
+
+
 article{
 	.container {
 		.post {
@@ -5,36 +8,31 @@ article{
 			.meta {
 				font-size: 11pt;
 			}
-
-
 			h3 {
 				margin-bottom:11px;
 				font-size: 31pt;
 			}
-
-			a{
-				float:left;
-			}
+			a {float:left;}
 			.entry{
-				//width:630px;
 				height:auto;
 	        	//@include xbc-gradient(#eee,#fff);
-	      		img {
-	       			float:left;
-	       		}
+	      		img {float:left;}
 	       		p {
-	        		//float:left;
 	        		text-transform: none;
 	        		text-align: left;
 	        		font-family: $default;
 	        		color:black;
 	        		font-size: 15px;
 	        		padding-bottom:em(15px);
-	        		 a {
-	        		 	margin: 0 12px 5px 0;
-	        		 }
+	        		
+	        		 a {margin: 0 12px 5px 0;}
 	        	}
 		    } /* .entry */
 		} /* .post */	
+		.commentlist{
+			.children{
+				padding:10px 0 10px 40px;
+			}
+		}
 	}/* container */
 } /*article*/

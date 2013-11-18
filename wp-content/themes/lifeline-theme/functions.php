@@ -1,16 +1,17 @@
 <?php
-
+    //post-thumnails
+if(function_exists ( 'add_theme_support' )) {
     add_theme_support ( 'post-thumbnails');
+}
 	
 	// Add RSS links to <head> section
-	automatic_feed_links();
+	//automatic_feed_links();
 	
 	// Load jQuery
-	if ( !is_admin() ) {
-	   wp_deregister_script('jquery');
-	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"), false);
-	   wp_enqueue_script('jquery');
-	}
+	function lifeline_load_scripts (){
+        wp_enquenue_script ('jquery');
+    }
+    add_action('wp_enqueue_script', 'lifeline_load_scripts');
 	
 	// Clean up the <head>
 	function removeHeadLinks() {
@@ -32,13 +33,13 @@
     		'after_title'   => '</h2>'
     	));
 		register_sidebar(array(
-    		'name' => 'sidebar widgets',
+    		'name' => 'Sample Side Tout',
     		'id'   => 'sidebar-widgets',
     		'description'   => 'These are widgets for the sidebar.',
     		'before_widget' => '<div id="%1$s" class="widget %2$s">',
     		'after_widget'  => '</div>',
-    		'before_title'  => '<h2>',
-    		'after_title'   => '</h2>'
+    		'before_title'  => '<h3>',
+    		'after_title'   => '</h3>'
     	));
 		register_sidebar(array(
     		'name' => 'sidebar widgets 2',
@@ -107,8 +108,6 @@ add_filter('excerpt_length', 'new_excerpt_length');
 /* read more added to excerpt */
 function new_excerpt_more($more) {
        global $post;
-	return '<a class="small-text" href="'. get_permalink($post->ID) . '">&nbsp; more...</a>';
+	return '<a class="small-text" href="'. get_permalink($post->ID) . '">&nbsp; ...</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-
-?>

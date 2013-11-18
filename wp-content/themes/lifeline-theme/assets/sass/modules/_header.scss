@@ -89,7 +89,6 @@ header.default {
 #nav {
   position: relative;
   @include xbc-gradient(#49a7c7,#39879e); 
-  padding:0 10px;
   font-family: $gothic;
   border-radius:5px 5px 0 0;
   width:100%;
@@ -98,32 +97,34 @@ header.default {
   margin-top: em(19px);
   z-index:500;
   @include box-shadow(1px 1px 8px 0 rgba(51,51,51,.46));
-   li.right{
-        float:right;
-        clear:none;
-        list-style: none;
-        a {
-          padding-top:em(17px);
-        }
-        }
+  
+  li.right{
+    float:right;
+    clear:none;
+    list-style: none;
+      a {
+        padding-top:em(17px);
+      }
+  } /* li.right*/
 
   ul {
     //  height:88px;
-      width:100%;
-    } /* ul  */
+    width:100%;
+    padding:0 10px;
+  } /* ul  */
 
     // <ul>
-       li {
+      li {
         // line-height:#{$height-header_default}px;
         text-transform: uppercase;
         letter-spacing:.1px;
         font-size:18px;
         float:left;
-        @include text-shadow(1px 1px 1px rgba(0,0,0,.4));
-        padding-bottom: em(5px);
         margin-right: em(5px);
+        border-bottom: 3px solid $colorSecondaryLight;
+        @include text-shadow(1px 1px 1px rgba(0,0,0,.4));
 
-        &:first-child a {padding-left:em(10px)}
+         &:first-child a {padding-left:em(10px)}
 
         a {
           display:block;
@@ -134,24 +135,17 @@ header.default {
           padding-right:em(30px);
           padding-left:em(4px);
           color:#fff;
-          padding-bottom: em(5px);
+          padding-bottom: em(4px);
           margin-right: em(5px);
-          border-bottom: 3px solid $colorSecondaryLight;
-
-         
-
         }
       }/*   li   */
-
-     
-  }/* nav */
-  .container {
-    padding:0;
+}/* nav */
+.container {
+  padding:0;
     .select {
       //position:absolute;top:50px;left:0;
      // @include transparent-bg($colorSecondary, 0.70, 0,0,0) ; 
 
-      // <ul>
       .sub {
        // display:none; 
         margin:0;
@@ -162,8 +156,6 @@ header.default {
         @include transparent-bg($colorSecondary, 0.70, 0,0,0) ; 
 
         //position:absolute;
-
-
         // shows <ul> .sub
         //&.show { display:block; }
 
@@ -175,19 +167,15 @@ header.default {
           font-size:11px;
           float:left;
           text-transform: uppercase;
-        
 
           a {
-          color:#fff;
-          @include text-shadow(1px 1px 1px rgba(0,0,0,.4));
-
-            
-
+            color:#fff;
+            @include text-shadow(1px 1px 1px rgba(0,0,0,.4));
           } /* a */
         } /*li*/
       }/* .sub */
     }/* .select */
-  } /*container*/
+} /*container*/
 
 
 
